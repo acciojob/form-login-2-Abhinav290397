@@ -3,10 +3,10 @@ const Form  = document.querySelector("#form");
 Form.addEventListener("submit" ,(event) =>{
 	event.preventDefault();
 	const data = {
-		fName : Form.Fname.value,
-		lName : Form.Lname.value,
-		Ph : Form.Phone.value,
-		Eml : Form.Email.value
+		fName : Form.["First Name"].value,
+		lName : Form.["Last Name"].value,
+		Ph : Form.["Phone Number"].value,
+		Eml : Form.["Email ID"].value
 	}
 	alert(JSON.stringify(data));
 });
