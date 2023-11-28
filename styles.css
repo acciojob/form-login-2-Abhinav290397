@@ -1,1 +1,12 @@
 /*  your css code here. If applicable */
+const Form  = document.querySelector("#form");
+Form.addEventListener("submit" ,(event) =>{
+	event.preventDefault();
+	const data = {
+		fName : Form.Fname.value,
+		lName : Form.Lname.value,
+		Ph : Form.Phone.value,
+		Eml : Form.Email.value
+	}
+	alert(JSON.stringify(data));
+});
